@@ -7,14 +7,9 @@ State File:
 
 The State_File is a plain text file, where each line carries the information specified below:
 
-    The first line is an integer 𝑁
-
-, which is the number of states.
-The next 𝑁
-lines are the descriptive names of the states with 𝐼𝐷 𝑖(0≤𝑖≤𝑁−1). Note that the name of a state is mainly for better readability, as the algorithm distinguishes states by their 𝐼𝐷𝑠
-(except the two special states).
-The next lines are the frequency of transitions between two states. Each line contains three fields (denoted as 𝑓1,𝑓2,𝑓3
-), separated by white spaces, meaning that we have seen 𝑓3 number of times where state 𝑓1 transit to state 𝑓2. Note that 𝑓3 could be any non-negative integer (𝑖.𝑒., including 0). Also note that if some state transitions are not specified in this file, we assume the frequency is 0
+    -The first line is an integer 𝑁, which is the number of states.
+    -The next 𝑁 lines are the descriptive names of the states with 𝐼𝐷 𝑖(0≤𝑖≤𝑁−1). Note that the name of a state is mainly for better readability, as the algorithm distinguishes states by their 𝐼𝐷𝑠(except the two special states).
+    -The next lines are the frequency of transitions between two states. Each line contains three fields (denoted as 𝑓1,𝑓2,𝑓3), separated by white spaces, meaning that we have seen 𝑓3 number of times where state 𝑓1 transit to state 𝑓2. Note that 𝑓3 could be any non-negative integer (𝑖.𝑒., including 0). Also note that if some state transitions are not specified in this file, we assume the frequency is 0
 
     .
 
