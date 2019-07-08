@@ -3,7 +3,7 @@ An implementation of HMM( HIDDEN MARKOV MODELS)-Viterbi Algorithm
 
 **Dataset description**:
 
-  **State File**:
+   **State File**:
 
 The State_File is a plain text file, where each line carries the information specified below:
 
@@ -20,7 +20,7 @@ The Symbol_File is a plain text file, where each line carries the information sp
 * The next lines are the frequency of emissions between a state and a symbol. Each line contains three fields (denoted as 𝑓1,𝑓2,𝑓3
 ), separated by white spaces, meaning that we have seen 𝑓3 number of times where state 𝑓1 emits the symbol 𝑓2. Note that 𝑓3 could be any non-negative integer (𝑖.𝑒., including 0). Also note that if some state-symbol emissions are not specified in this file, we assume the frequency is 0.
 
-   **Query File:
+   **Query File**:
 
 The Query_File consists of one or more lines, where each line is an address to be parsed.
 
@@ -31,12 +31,12 @@ The Query_File consists of one or more lines, where each line is an address to b
 
 For example, the following line:
 
-**8/23-35 Barker St., Kingsford, NSW 2032
+**8/23-35 Barker St., Kingsford, NSW 2032**
 
 will be parsed into the following tokens (one token a line)
 
 8
-/
+\/
 23
 -
 35
