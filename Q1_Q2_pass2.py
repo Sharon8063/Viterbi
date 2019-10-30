@@ -40,7 +40,7 @@ def data_preprocess(State_File, Symbol_File, Query_File):
             obs.append(tokens) 
     return state_n, states,trans,symbol_n, symbol, emission,trans_p,obs
 
-# Question 1
+
 def viterbi_algorithm(State_File, Symbol_File, Query_File): # do not change the heading of the function
     
     state_n, states,trans,symbol_n, symbol, emission,trans_p,obs=data_preprocess(State_File, Symbol_File, Query_File)                              
@@ -153,7 +153,6 @@ def top_k(temp,opt_path,k,j=[]):
             heap_sort(0,k,heap,heap_path)
     return  heap,heap_path
 
-# Question 2
 def top_k_viterbi(State_File, Symbol_File, Query_File, k): # do not change the heading of the function
     state_n, states,trans,symbol_n, symbol, emission,trans_p,obs=data_preprocess(State_File, Symbol_File, Query_File)
     viterbi = []
@@ -205,6 +204,3 @@ def top_k_viterbi(State_File, Symbol_File, Query_File, k): # do not change the h
         #print(obs)
     return viterbi
 
-# Question 3 + Bonus
-def advanced_decoding(State_File, Symbol_File, Query_File): # do not change the heading of the function
-    pass # Replace this line with your implementation...
